@@ -1,0 +1,6 @@
+Revision history for Perl extension Math::BigInt::Parts.
+
+0.01  Sun Sep 24 14:53:12 2006
+	- original version; created by h2xs 1.23 with options
+		-AX --skip-exporter -n Math::BigInt::Parts
+
