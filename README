@@ -1,10 +1,10 @@
-Math::BigInt::Parts version 0.01
+Math::BigInt::Parts version 0.02
 ================================
 
-This module implements the Math::BigInt methods "fparts" and "eparts"
-which are variants of the standard Math::BigInt "parts" method.
-"fparts" and "eparts" return the mantissa and exponent with the values
-that are common for floating point numbers in standard notation and in
+This module implements the functions "fparts" and "eparts" which are
+variants of the standard Math::BigInt "parts" method. "fparts" and
+"eparts" return the mantissa and exponent with the values that are
+common for floating point numbers in standard notation and in
 engineering notation, respectively.
 
 INSTALLATION
@@ -18,15 +18,19 @@ To install this module type the following:
 
 DEPENDENCIES
 
-This module requires these other modules and libraries:
+This module requires only modules that are a part of the standard Perl
+distribution.
 
-  Math::BigInt (a standard perl module)
-  Math::BigFloat (a standard perl module)
-  Scalar::Util (a standard perl module; only used for the tests)
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc Math::BigInt::Parts
 
 COPYRIGHT AND LICENCE
 
-Copyright (c) 2006 by Peter J. Acklam <pjacklam@cpan.org>
+Copyright 2006-2010 by Peter John Acklam <pjacklam@online.no>
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
