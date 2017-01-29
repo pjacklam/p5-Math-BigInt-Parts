@@ -1,9 +1,4 @@
 # -*- mode: perl; coding: us-ascii-unix -*-
-#
-# Author:      Peter John Acklam
-# Time-stamp:  2010-03-17 21:28:29 +01:00
-# E-mail:      pjacklam@online.no
-# URL:         http://home.online.no/~pjacklam
 
 use 5.006;              # required version of Perl
 use strict;             # restrict unsafe constructs
@@ -11,20 +6,49 @@ use warnings;           # control optional warnings
 
 use ExtUtils::MakeMaker;
 
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
+print <<"EOF";
+
+########################################################################
+#
+# This module is now redundant. The functions implemented in this module
+# are now implemented as methods in Math::BigInt and Math::Float. If you
+# have a recent version of these modules, you already have the methods
+# available to you.
+#
+# See the number splitting methods nparts() and eparts(), and maybe also
+# sparts(), and dparts().
+#
+# Also see the string formatting methods bnstr() and bestr(), and maybe
+# also bsstr() and bdstr().
+#
+########################################################################
+
+EOF
+
+ExtUtils::MakeMaker::prompt("Continue anyway? ", "y") =~ /^y/i
+  or die "FATAL: User aborted configuration of Math::BigInt::Parts.\n";
 
 WriteMakefile
   (
-   (MM->can('signature_target') ? (SIGN => 1) : ()),
    NAME             => 'Math::BigInt::Parts',
    AUTHOR           => 'Peter John Acklam <pjacklam@online.no>',
    VERSION_FROM     => 'lib/Math/BigInt/Parts.pm',
    ABSTRACT_FROM    => 'lib/Math/BigInt/Parts.pm',
-   PL_FILES         => {},
    PREREQ_PM        => {
-                        #'Scalar::Util' => 0.0,
+                        #'ExtUtils::MakeMaker' => 6.58,
+                        'Test::More'          => 0.47,
+                        'Math::BigInt'        => 1.999719,
                        },
-   dist             => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-   clean            => { FILES => 'Math-BigInt-Parts-*' },
+   'LICENSE'            => 'perl_5',
+   'LIBS'               => [''],        # e.g., '-lm'
+   'DEFINE'             => '',          # e.g., '-DHAVE_SOMETHING'
+   'INC'                => '',          # e.g., '-I/usr/include/other'
+   'SIGN'               => 1,
+   dist             => {
+                        COMPRESS => 'gzip -9f',
+                        SUFFIX => '.gz',
+                       },
+   clean            => {
+                        FILES => 'Math-BigInt-Parts-*',
+                       },
   );

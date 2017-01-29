@@ -1,5 +1,5 @@
-Math::BigInt::Parts version 0.02
-================================
+Math::BigInt::Parts
+===================
 
 This module implements the functions "fparts" and "eparts" which are
 variants of the standard Math::BigInt "parts" method. "fparts" and
@@ -30,7 +30,7 @@ perldoc command.
 
 COPYRIGHT AND LICENCE
 
-Copyright 2006-2010 by Peter John Acklam <pjacklam@online.no>
+Copyright 2006-2016 by Peter John Acklam <pjacklam@online.no>
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

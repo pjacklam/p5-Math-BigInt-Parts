@@ -1,9 +1,4 @@
-# -*- mode: perl; coding: utf-8-unix; -*-
-#
-# Author:      Peter John Acklam
-# Time-stamp:  2010-09-16 20:16:20 +02:00
-# E-mail:      pjacklam@online.no
-# URL:         http://home.online.no/~pjacklam
+# -*- mode: perl; coding: us-ascii-unix; -*-
 
 package Math::BigInt::Parts;
 
@@ -20,7 +15,7 @@ our @EXPORT = qw();
 our @EXPORT_OK = qw(fparts eparts);
 our %EXPORT_TAGS = (all => [ @EXPORT_OK ]);
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Math::BigFloat;
 
@@ -219,9 +214,9 @@ sub fparts {
 
         return $fmant unless wantarray;
 
-        # List context. Return the mantissa and the exponent. Adjust the exponent
-        # the "opposite way" of how we adjusted the mantissa, to ensure that the
-        # input argument = $fmant * 10 ** $fexpo.
+        # List context. Return the mantissa and the exponent. Adjust the
+        # exponent the "opposite way" of how we adjusted the mantissa, to
+        # ensure that the input argument = $fmant * 10 ** $fexpo.
 
         my $fexpo = $expo -> copy() -> badd($expo10adj);
 
