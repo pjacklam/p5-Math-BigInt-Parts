@@ -12,9 +12,9 @@ unless($ENV{AUTOMATED_TESTING} || $ENV{NONINTERACTIVE_TESTING}) {
 ########################################################################
 #
 # This module is now redundant. The functions implemented in this module
-# are now implemented as methods in Math::BigInt and Math::Float. If you
-# have a recent version of these modules, you already have the methods
-# available to you.
+# are now implemented as methods in Math::BigInt and Math::BigFloat. If
+# you have a recent version of these modules, you already have the
+# methods available to you.
 #
 # See the number splitting methods nparts() and eparts(), and maybe also
 # sparts(), and dparts().

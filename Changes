@@ -2,6 +2,8 @@ Revision history for Perl extension Math::BigInt::Parts.
 
 2018-xx-xx v0.04
 
+* Fix typo in Makefile.PL (Math::Float -> Math::BigFloat).
+
 * Only prompt when run interactively.
 
 * Increment version number.
