@@ -6,7 +6,8 @@ use warnings;           # control optional warnings
 
 use ExtUtils::MakeMaker;
 
-print <<"EOF";
+unless($ENV{AUTOMATED_TESTING} || $ENV{NONINTERACTIVE_TESTING}) {
+    print <<"EOF";
 
 ########################################################################
 #
@@ -25,8 +26,9 @@ print <<"EOF";
 
 EOF
 
-ExtUtils::MakeMaker::prompt("Continue anyway? ", "y") =~ /^y/i
-  or die "FATAL: User aborted configuration of Math::BigInt::Parts.\n";
+    ExtUtils::MakeMaker::prompt("Continue anyway? ", "y") =~ /^y/i
+        or die "FATAL: User aborted configuration of Math::BigInt::Parts.\n";
+}
 
 WriteMakefile
   (
