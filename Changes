@@ -1,5 +1,9 @@
 Revision history for Perl extension Math::BigInt::Parts.
 
+2018-xx-xx v0.04
+
+* Increment version number.
+
 2016-12-08 v0.03
 
 * Notify the world that this distribution is redundant.
