@@ -1,40 +1,41 @@
-Revision history for Perl extension Math::BigInt::Parts.
+0.04 Not Released
 
-2018-xx-xx v0.04
+ * Format CHANGES according to CPAN::Changes::Spec. Add test file
+   t/release-cpan-changes.t.
 
-* Fix typo in Makefile.PL (Math::Float -> Math::BigFloat).
+ * Fix typo in Makefile.PL (Math::Float -> Math::BigFloat).
 
-* Only prompt when run interactively.
+ * Only prompt when run interactively.
 
-* Increment version number.
+ * Increment version number.
 
-2016-12-08 v0.03
+0.03 2016-12-08
 
-* Notify the world that this distribution is redundant.
+ * Notify the world that this distribution is redundant.
 
-* Add required versions of Test::More and Math::BigInt to Makefile.PL.
+ * Add required versions of Test::More and Math::BigInt to Makefile.PL.
 
-2010-09-16 v0.02
+0.02 2010-09-16
 
-* Parts.pm: Changed namespace from Math::BigInt to
-  Math::BigInt::Parts. The documentation says how to use the
-  Math::BigInt::Parts functions as Math::BigInt methods.
+ * Parts.pm: Changed namespace from Math::BigInt to
+   Math::BigInt::Parts. The documentation says how to use the
+   Math::BigInt::Parts functions as Math::BigInt methods.
 
-* Parts.pm: Added URLs to documentation
+ * Parts.pm: Added URLs to documentation
 
-* Parts.pm: Miscellaneous code reformatting.
+ * Parts.pm: Miscellaneous code reformatting.
 
-* Parts.pm: Switched to UTF-8 encoding.
+ * Parts.pm: Switched to UTF-8 encoding.
 
-* Parts.pm: Modernization: 'use vars ...' replaced by 'our ...'.
+ * Parts.pm: Modernization: 'use vars ...' replaced by 'our ...'.
 
-* Add testfiles for POD.
+ * Add testfiles for POD.
 
-* Included signature. For testing signature, the TEST_SIGNATURE
-  environment variable must be set.
+ * Included signature. For testing signature, the TEST_SIGNATURE
+   environment variable must be set.
 
-* Parts.pm: Increased version number.
+ * Parts.pm: Increased version number.
 
-2006-09-24 v0.01
+0.01 2006-09-24
 
-* First version, released on an unsuspecting world.
+ * First version, released on an unsuspecting world.
