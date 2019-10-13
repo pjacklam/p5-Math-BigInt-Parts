@@ -53,4 +53,14 @@ WriteMakefile
    clean            => {
                         FILES => 'Math-BigInt-Parts-*',
                        },
+   'META_MERGE'         => {
+       'meta-spec' => { version => 2 },
+        resources => {
+            repository => {
+                type => 'git',
+                url  => 'https://github.com/pjacklam/p5-Math-BigInt-Parts.git',
+                web  => 'https://github.com/pjacklam/p5-Math-BigInt-Parts',
+            },
+        },
+    },
   );
